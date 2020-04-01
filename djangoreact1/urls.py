@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# connect to both frontend and api apps, but make sure frontend is first
 urlpatterns = [
+    path('', include('frontend_app.urls')), 
     path('', include('api_app.urls')),
-    path('admin/', admin.site.urls),
 ]
