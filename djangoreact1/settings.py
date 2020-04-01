@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 # Must add your django app AND rest_framework
 
 INSTALLED_APPS = [
-    'some_app',
+    'api_app',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
